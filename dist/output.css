@@ -512,10 +512,3 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-
-#mainPage{
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-  background-color: blue;
-}
