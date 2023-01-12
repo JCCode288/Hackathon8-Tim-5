@@ -1,9 +1,116 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 #mainPage{
-    display: flex;
+    /* display: flex; */
     height: 100vh;
     width: 100vw;
-    background-color: blue;
 }
+
+body{
+    /* background-color: #70ff66; */
+    /* display: flex; */
+    overflow-y: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #adf7b6; */
+}
+
+#containerForm {
+    display: absolute;
+}
+
+.mainLokasi{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.lokasiVaksin{
+    display: flex;
+    height: 100px;
+    width: 500px;
+    margin:20px;
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    font-size: 40px;
+    vertical-align: 20px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+    padding: 10px;
+    border: 1px dashed grey;
+}
+.mainNama{
+    margin-left: 20px;
+}
+
+.namaPasien{
+    height: 100px;
+    width: 500px;
+    border-style: solid;
+    background-color: white;
+    border-radius: 8px;
+    border-width: 2px;
+    font-size: 40px;
+   text-align: center;    /* mengubah penempatan font */
+    vertical-align: 20px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+    padding: 10px;
+    border: 1px dashed grey;
+}
+
+.mainUmur{
+    display :flex;
+    float:right
+
+}
+
+.umurPasien{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 2px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    font-size: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+    padding: 10px;
+    border: 1px dashed grey;
+}
+
+.mainVaksin{
+    float:right;
+    
+ }
+ 
+ .vaksinPasien{
+     height: 300px;
+     width: 200px;
+     background-color:  white;
+     border-style:solid;
+     border-radius: 8px;
+     border-width: 2px;
+     text-align: center;
+     font-size: 30px;
+     box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+    padding: 10px;
+    border: 1px dashed grey;
+ }
+
+ .container{
+    justify-content: space-between;
+    display: flex;
+ }
+
+ .container-kecil{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100vh;
+ }

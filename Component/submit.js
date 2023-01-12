@@ -23,12 +23,11 @@ function submit() {
   ];
 
   form.addEventListener("submit", (event) => {
-
     let formToSend = {};
     formToSend["name"] = form["name"].value;
     formToSend["tanggalLahir"] = form["umur"].value;
 
-    for(let i = 0; i < vaksinId.length; i++){
+    for (let i = 0; i < vaksinId.length; i++) {
       if (document.getElementById(vaksinId[i]).checked) {
         formToSend[vaksinNama[i]] = true;
       } else {
@@ -36,6 +35,8 @@ function submit() {
       }
     }
 
+    let e = document.getElementById(`city`)
+    formToSend['tempatTinggal'] = e.options[e.selectedIndex].text;
     localStorage.setItem(`person`, JSON.stringify(formToSend));
     console.log(document.forms.personForm);
   });

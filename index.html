@@ -8,34 +8,38 @@
   <script type="module" src="./index.js" defer></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="/dist/output.css" rel="stylesheet" />
+  <link href="index.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.1/flowbite.min.css" rel="stylesheet" />
+  <style></style>
   <title>Document</title>
 </head>
 
 <body class="font-mono">
-  <div id="containerForm" class="w-screen h-screen flex justify-center bg-violet-400 bg-opacity-40">
+  <div id="containerForm" class="w-screen h-screen flex justify-center  bg-violet-400 bg-opacity-40">
     <form id="personForm" class="max-w-5xl w-3/4 h-auto bg-red-50 m-auto rounded-lg p-5">
       <h1 class="font-mono text-3xl">Form Data Pasien</h1>
       <h2 class="nameGreets text-xl mt-5">Halo, selamat datang Bunda 👋</h2>
       <div class="flex my-2">
         <label for="fullName" class=""></label>
         <input required type="text" name="name" id="formName" placeholder="Nama Lengkap Pasien..."
-          class="mr-4 bg-white w-full border border-slate-300 rounded-md py-2 pl-2 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" />
+          class="mr-2 bg-white w-full border border-slate-300 rounded-md py-2 pl-2 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" />
         <label for="age"></label>
-        <input required type="date" name="umur" id="formUmur" placeholder="Umur Pasien..."
-          class="mr-4 bg-white w-1/4 border border-slate-300 rounded-md py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" />
+        <input required type="text" onfocus="(this.type='date')" name="umur" id="formUmur"
+          placeholder="Tanggal lahir..."
+          class="mr-2 bg-white w-1/4 border border-slate-300 rounded-md py-2 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" />
         <input type="submit" value="submit" id="submit-form"
           class="text-white bg-blue-700 active:cursor-pointer hover:cursor-pointer hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-200" />
       </div>
-      <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
-      <select id="countries"
+      <label for="city" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
+      <select required id="city"
         class="bg-white border border-gray-300 text-gray-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
-        <option selected>Pilih tempat tinggal...</option>
-        <option value="Surabaya">United States</option>
-        <option value="Jakarta">Canada</option>
+        <option selected class="text-white">Pilih tempat tinggal...</option>
+        <option value="Surabaya">Surabaya</option>
+        <option value="Jakarta">Jakarta</option>
       </select>
-      <div class="pilihan-vaksin">
-        <div class="flex mt-5">
+      <div class="pilihan-vaksin mt-5">
+        <p class="">✔️ Centang apabila sudah vaksin</p>
+        <div class="flex mt-2">
           <div class="flex w-1/2 mr-2 items-center pl-4 border border-gray-200 rounded dark:border-gray-700">
             <input id="vacc1" type="checkbox"
               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
@@ -85,14 +89,37 @@
         </div>
       </div>
     </form>
-    <div class="deleteLogs">
-      <a href="" style="cursor: pointer; text-decoration: none" id="clear">delete logs</a>
-    </div>
   </div>
-  <div id="mainPage">
-    <div id="kumpulanVaksin"></div>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.1/flowbite.min.js"></script>
+
+  <div id="mainPage" style="display: absolute" class=" bg-violet-400 bg-opacity-40 ">
+    <div class="container">
+      <div class="container-besar">
+        <div class="mainNama">
+          <div class="namaPasien">Nama</div>
+        </div>
+        <div class="mainLokasi">
+          <div class="lokasiVaksin">lokasi 1
+            <button type="button"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              >Daftar</button>
+          </div>
+          <div class="lokasiVaksin">lokasi 2</div>
+          <div class="lokasiVaksin">lokasi 3</div>
+        </div>
+      </div>
+      <div class="container-kecil">
+        <div class="mainUmur">
+          <div class="umurPasien">umur</div>
+        </div>
+        <div class="mainVaksin">
+          <div class="vaksinPasien">Vaksin</div>
+        </div>
+        <div class="deleteLogs">
+          <a href="" style="cursor: pointer; text-decoration: none" id="clear">delete logs</a>
+        </div>
+        <div id="kumpulanVaksin"></div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.1/flowbite.min.js"></script>
 </body>
 
 </html>
