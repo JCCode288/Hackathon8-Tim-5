@@ -4,7 +4,9 @@ import submit from "./Component/submit.js";
 
 submit();
 deletingForm();
-document.getElementById("clear").addEventListener("click", deleteLog());
+document.getElementById("clear").addEventListener("click", () => {
+  deleteLog();
+});
 // let nama = document.getElementById("formName").value;
 // nama.addEventListener
 // let umur = document.getElementById("formUmur").value;

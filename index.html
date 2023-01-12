@@ -5,21 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="./index.js" defer></script>
+    <link href="/dist/output.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
-    <div class="nameGreets"></div>
-    <form id="personForm">
-      <label for="fullName"></label>
-      <input type="text" name="name" id="formName" />
-      <label for="age"></label>
-      <input type="number" name="umur" id="formUmur" />
-      <input type="submit" value="submit" />
-    </form>
+    <div id="containerForm">
+      <div class="nameGreets"></div>
+      <form id="personForm">
+        <label for="fullName"></label>
+        <input type="text" name="name" id="formName" />
+        <label for="age"></label>
+        <input type="number" name="umur" id="formUmur" />
+        <label for="cek vaksin">vaksin</label>
+        <select name="vaccs" id="daVacs">
+          <option value="vacc1">vacc1</option>
+          <option value="vacc2">vacc2</option>
+          <option value="vacc3">vacc3</option>
+          <option value="vacc4">vacc4</option>
+          <option value="vacc5">vacc5</option>
+          <option value="vacc6">vacc6</option>
+          <option value="vacc7">vacc7</option>
+        </select>
+        <input type="submit" value="submit" />
+      </form>
+    </div>
     <div class="deleteLogs">
       <a href="" style="cursor: pointer; text-decoration: none" id="clear"
         >delete logs</a
       >
     </div>
+    <div id="mainPage"></div>
   </body>
 </html>

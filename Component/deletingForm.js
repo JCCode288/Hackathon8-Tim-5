@@ -1,5 +1,5 @@
 function deletingForm() {
-  let form = document.getElementById("personForm");
+  let form = document.getElementById("containerForm");
   let person = JSON.parse(localStorage.getItem("person"));
   let nama = document.getElementsByClassName("nameGreets");
   if (person) {
@@ -8,7 +8,7 @@ function deletingForm() {
     nama[0].append(h1Name);
     form.style.display = "none";
   } else {
-    form.style.display = "relative";
+    form.style.display = "absolute";
   }
 }
 export default deletingForm;
