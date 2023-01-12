@@ -91,39 +91,72 @@
     </form>
   </div>
 
-  <div id="" style="display: absolute" 
-  class=" w-screen h-screen bg-violet-400 bg-opacity-40 justify-center ">
-    <div class=" flex justify-center align-middle">
-      <div class="container-besar">
+  <div id="" style="display: absolute"
+    class=" flex w-screen  bg-violet-400 bg-opacity-40 justify-center align-middle ">
+    <div class=" h-3/4 m-auto flex justify-center align-middle pt-10">
+      <div class="container-besar mr-5">
         <div class="mainNama">
-          <div class="namaPasien">Nama</div>
-        </div>
-        <div class="mainLokasi">
-          <div class="lokasiVaksin flex ">
-            <p>Lokasi 1</p>
-            <div>
-              <button type="button"
-              class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-              >Daftar</button>
+          <div class="namaPasien w-full ">
+            <p class="text-left text-2xl font-bold">Portal Pendaftaran Vaksin</p>
+            <div id="greetings" 
+            class=" text-xl align-bot">
             </div>
           </div>
-          <div class="lokasiVaksin">lokasi 2</div>
-          <div class="lokasiVaksin">lokasi 3</div>
+        </div>
+        <div class="flex">
+        <div id="containerLokasi" class="mainLokasi font-serif mr-5">
+          <div
+            class="lokasiVaksin flex justify-between bg-opacity-90  bg-white blur-md invert drop-shadow-xl md:filter-none ">
+            <div class="w-full flex-row">
+              <div>
+                <div class="flex justify-between w-full">
+                  <p class="text-lg">🏥</p>
+                  <div class="w-1/5 h-4 flex flex-wrap justify-end">
+                    <div class="w-full">
+                      <div class="w-full h-full flex">
+                        <button type="button"
+                          class=" mt-5 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-7 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Daftar</button>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                <p class="text-lg">Puskesmas</p>
+              </div>
+              <div>
+                <p class="text-lg font-semibold">Balas Klumprik</p>
+              </div>
+              <div class="flex">
+                <p class="text-base mr-2">📌</p>
+                <p class="text-base">Jln. Raya Balas Klumprik</p>
+              </div>
+              <div class="flex">
+                <p class="text-base mr-2">📞</p>
+                <p class="text-base mr-5">(031)7665219</p>
+                <p class="text-base font-medium ">dr. Winartuti Santoso, M.Ke</p>
+              </div>
+            </div>           
+          </div>
+
+          
+        </div>
+          <div class="h-full mainVaksin font-serif">
+            <div class="flex justify-start">
+            <div class="vaksinPasien" id="vaksinPasien">
+              <p class="text-lg" >Vaksin Terpenuhi</p> </div>
+          </div>
+            <div class="deleteLogs">
+              <a href="" style="cursor: pointer;" 
+              class=" mt-2 w-full justify-between text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
+              id="clear">Keluar <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="container-kecil">
-        <div class="mainUmur">
-          <div class="umurPasien">umur</div>
-        </div>
-        <div class="mainVaksin">
-          <div class="vaksinPasien">Vaksin</div>
-        </div>
-        <div class="deleteLogs">
-          <a href="" style="cursor: pointer; text-decoration: none" id="clear">delete logs</a>
-        </div>
         <div id="kumpulanVaksin"></div>
       </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.1/flowbite.min.js"></script>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.1/flowbite.min.js"></script>
 </body>
 
 </html>

@@ -5,8 +5,11 @@ function submit() {
 
   form.addEventListener("submit", (event) => {
     let formToSend = {};
+    let tahun = form["umur"].value.slice(0, 4);
+    let umur = 2023 - Number(tahun);
     formToSend["name"] = form["name"].value;
     formToSend["tanggalLahir"] = form["umur"].value;
+    formToSend["umur"] = umur;
     formToSend["vaccined"] = {};
     for (let i = 0; i < vaksinId.length; i++) {
       if (document.getElementById(vaksinId[i]).checked) {

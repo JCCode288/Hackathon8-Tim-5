@@ -30,18 +30,18 @@ body{
 
 .lokasiVaksin{
     /* display: flex; */
-    height: 100px;
+    height: auto;
     width: 500px;
     margin-top: 10px;
-    background-color: white;
+    /* background-color: white; */
     border-style: solid;
     border-width: 2px;
     border-radius: 8px;
     font-size: 40px;
     vertical-align: 20px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+    /* box-shadow: 2px 2px 2px rgba(0,0,0,0.8); */
     padding: 10px;
-    border: 1px dashed grey;
+    /* border: 1px solid white; */
 }
 .mainNama{
     /* margin-left: 20px; */
@@ -57,9 +57,9 @@ body{
     font-size: 40px;
     text-align: center;    /* mengubah penempatan font */
     vertical-align: 20px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+    /* box-shadow: 2px 2px 2px rgba(0,0,0,0.8); */
     padding: 10px;
-    border: 1px dashed grey;
+    /* border: 1px solid grey; */
 }
 
 .mainUmur{
@@ -69,8 +69,9 @@ body{
 }
 
 .umurPasien{
-    height: 200px;
-    width: 200px;
+    height: auto;
+    width: auto;
+    max-width: 500px;
     background-color: white;
     border-style: solid;
     border-radius: 8px;
@@ -81,7 +82,8 @@ body{
     text-align: center;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
     padding: 10px;
-    border: 1px dashed grey;
+    border: 1px solid grey;
+    font-size: 20px;
 }
 
 .mainVaksin{
@@ -90,7 +92,7 @@ body{
  }
  
  .vaksinPasien{
-     height: 300px;
+     height: auto;
      width: 200px;
      background-color:  white;
      border-style:solid;
@@ -98,9 +100,10 @@ body{
      border-width: 2px;
      text-align: center;
      font-size: 30px;
-     box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+     margin-top: 10px;
+     /* box-shadow: 2px 2px 2px rgba(0,0,0,0.8); */
     padding: 10px;
-    border: 1px dashed grey;
+    /* border: 1px dashed grey; */
  }
 
  .container-kecil{
