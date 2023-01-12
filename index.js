@@ -3,9 +3,9 @@ import deletingForm from "./Component/deletingForm.js";
 import submit from "./Component/submit.js";
 
 submit();
-deletingForm();
+// deletingForm();
 document.getElementById("clear").addEventListener("click", () => {
-  deleteLog();
+  // deleteLog();
 });
 // let nama = document.getElementById("formName").value;
 // nama.addEventListener
