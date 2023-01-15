@@ -22,7 +22,6 @@ function submit() {
     let kota = document.getElementById(`city`);
     formToSend["tempatTinggal"] = kota.options[kota.selectedIndex].text;
     localStorage.setItem(`person`, JSON.stringify(formToSend));
-    console.log(document.forms.personForm);
   });
 }
 export default submit;

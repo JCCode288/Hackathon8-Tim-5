@@ -1,10 +1,8 @@
 function populateLokasi() {
-  let person = JSON.parse(localStorage.getItem("person"))
-  let personLoc = person["tempatTinggal"];
-  let locationDB;
-  if (personLoc === "Surabaya") {
-    locationDB = JSON.parse(localStorage.getItem("surabayaArr"));
-  }
+  let person = JSON.parse(localStorage.getItem("person"));
+  let personLoc = person["tempatTinggal"].toLowerCase();
+  let locationDB = JSON.parse(localStorage.getItem(`${personLoc}Arr`));
+
   console.log(locationDB);
   let count = 1;
   let mainLokasi = document.getElementById("containerLokasi");
